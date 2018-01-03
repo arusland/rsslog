@@ -10,4 +10,4 @@ pgrep -a -f rsslog | awk '{print $1;}' | while read -r a; do kill -9 $a; done
 cd $sdir/dist
 
 # jetty-runner
-java -jar -Dport=80 rsslog.jar
+java -jar -Dport=80 rsslog.jar &
