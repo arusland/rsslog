@@ -3,3 +3,4 @@ target
 logs
 *.iml
 dist/*.jar
+rss.log

@@ -42,7 +42,7 @@ public class RSSLogMainApp {
     private void getHackerNews(Context context) {
         long lastTime = System.currentTimeMillis();
 
-        try(InputStream stream = getClass().getResource("/hackernews1.rss").openStream()) {
+        try(InputStream stream = getClass().getResource("/hackernews2.rss").openStream()) {
             String xml = IOUtils.toString(stream, "UTF-8");
             context.contentType("application/rss+xml").result(xml);
         } catch (IOException e) {
